@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<TITLE>Send Renew domain Notification</TITLE>
+</HEAD>
+<BODY>
+
+<center>
+<h2>Send Mass Email Notification to Clients</h2>
+
+</center>
+
+<FORM method="POST" action="mass_renew_1.php">
+	<table align=center border=2 WIDTH=90% cellspacing=2 cellpadding=5>
+	<TR><TD bgcolor="#99FF99">
+		<table align=center border=0 WIDTH=100% cellspacing=0 cellpadding=3>
+		<tr>
+		<td valign=top align=right><strong>*Expire Date (From >=): </strong></td>
+		<td valign=top><INPUT type="text" name="expire_date_from" size=20 maxlength=10><br>(yyyy-mm-dd)</td>
+		</tr>
+
+		<tr>
+		<td valign=top align=right><strong>*Expire Date (To <=): </strong></td>
+		<td valign=top><INPUT type="text" name="expire_date_to" size=20 maxlength=10><br>(yyyy-mm-dd)</td>
+		</tr>
+
+		<tr>
+		<td valign=top align=right bgcolor="#ffff99">Select: </td>
+		<td valign=top bgcolor="#ffff99">
+			<INPUT type="radio" name="email_type" value="renew_domain" checked> Send Domain Renew Notice<br>
+			<INPUT type="radio" name="email_type" value="renew_hosting"> Send Hosting Renew Notice<br>
+		</td>
+		</tr>
+		</table>
+	</TD></TR>
+
+	<TR><TD align=center colspan=2>
+		<INPUT type="submit" value="Press Here to Continue">
+	</TD></TR>
+
+	</table>
+
+</FORM>
+
+</BODY>
+</HTML>

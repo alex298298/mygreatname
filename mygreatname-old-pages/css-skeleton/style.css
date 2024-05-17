@@ -1,0 +1,233 @@
+/* Custom Styles Write Here ... */
+
+.one-third.column {
+		
+		margin-left: 0px;
+		padding-right: 10px;
+		padding-left: 5px;
+	}
+
+
+h1, h2 {
+    color: #a6430a;
+    margin: .2em auto;
+}
+
+h3 {
+    	color: #009900;
+    	margin: .25em auto;
+	font-size: 2.5rem;
+}
+
+
+h4 {
+    	color: #002699;
+    	margin: .25em auto;
+	font-size: 2.0rem;
+}
+
+.headerImage{
+	background: url("../images/header-layer-bg-2.jpg") no-repeat center;
+	height: 150px;
+	background-size: auto;
+}
+
+.headerImage h2 {
+	font-size: 4.0rem;
+	color: #ffbb33;
+	font-weight: 600;
+}
+
+.headerDescription {
+	margin-top: -15px; 
+	padding-left: 30px;
+	font-size:1.2em;
+	color: #ffe6b3;
+}
+
+.headerMenu {
+	background-color:#ccc;
+	height: 20px;
+	padding:10px;
+}
+
+img {
+	max-width: 100%;
+    	/*max-height: 100%;*/
+	height: auto;
+}
+
+.imgleft {
+	float: left;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+
+.boxer {
+   display: table;
+   border-collapse: collapse;
+}
+ 
+.boxer .box-row {
+   display: table-row;
+}
+ 
+.boxer .box {
+   display: table-cell;
+   text-align: left;
+   vertical-align: top;
+   /*border: 1px solid black;*/
+}
+
+.boxer .box2 {
+   display: table-cell;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid black;
+   padding: 10px;
+   text-align: center;
+} 
+
+
+u { 
+  text-decoration: underline;
+}
+
+/* Header Navigation Menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a6430a;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  /*padding: 14px 16px;*/
+  padding-top: 14px;
+  padding-left: 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #a6430a;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.green {
+    	color: #009900;
+}
+
+
+
+
+/* Travel Tours Display*/
+.travelContent{
+	height: 210px;
+	/*border: 1px solid #ccc;*/ /* Use for design process */
+}
+
+img {
+	max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/* break intro article to 2 column for easy reading */
+article {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-width: 3500px;
+     -moz-column-width: 350px;
+          column-width: 350px;
+}
+
+.footerContent {
+	margin-top:15px;
+	height:100px;
+	background-color:#ddd;
+	text-align: center;
+	line-height: 100px;
+}
+
+/* If browser window is 600px or smaller, display one travel only */
+@media only screen and (max-width: 600px) {
+	.one-third.column {
+		width:100%;
+		margin-left: 0px;
+	}
+	
+	.one-half.column  {
+		width:100%;
+	}
+
+	.two-thirds.column {
+		width:100%;
+		margin-left: 0px;
+	}
+	
+}
+
+/* If browser window greater than 601px AND smaller than 950, dispaly 2 travel */
+@media only screen and (min-width:601px) and (max-width:950px) {
+	.one-third.column {
+		width:50%;
+		margin-left: 0px;
+		padding-right: 25px;
+	}
+	
+	.travelImageBox h3 {
+		font-size: 1.5rem;
+	}
+	
+	.one-half.column  {
+		width:100%;
+	}
+
+	.two-thirds.column {
+		width:100%;
+		margin-left: 0px;
+	}
+}
+
+/* If browser window greater than 751px AND smaller than 1200, larger travel heading font */
+@media only screen and (min-width:751px) and (max-width:1200px) {
+	
+	.travelImageBox h3 {
+		font-size: 1.8rem;
+	}
+	
+}
+
+/* If browser window is 951px or greater, dispaly 3 travel */
+@media only screen and (min-width: 951px) {
+	.one-third.column {
+		/*width:33%;*/
+		width: 32%
+	}
+
+	.two-thirds.column {
+		width:64%;
+		margin-right: 20px;
+	}
+}
